@@ -1,3 +1,4 @@
+// Homepage is the parent component.
 class Homepage extends React.Component {
   render(){
     return (
@@ -10,6 +11,7 @@ class Homepage extends React.Component {
 
 }
 
+// Component: Logo for the website.
 class Logo extends React.Component {
   render() {
     return (
@@ -18,6 +20,7 @@ class Logo extends React.Component {
   }
 }
 
+// Login Button.
 class Login extends React.Component {
   render(){
     return (
