@@ -1,27 +1,25 @@
 {
   "name": "rce",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/evanyang1/rce.git"
-  },
-  "author": "Evan Yang",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/evanyang1/rce/issues"
-  },
-  "homepage": "https://github.com/evanyang1/rce#readme",
+      "serve": "live-server public/",
+      "build": "webpack",
+      "dev-server": "webpack-dev-server"
+    },
   "dependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.5",
-    "babel-plugin-transform-class-properties": "^6.24.1",
-    "react-dom": "^16.4.1",
-    "webpack": "^4.16.1"
-  }
+      "babel-cli": "6.24.1",
+      "babel-core": "6.25.0",
+      "babel-loader": "7.1.1",
+      "babel-plugin-transform-class-properties": "6.24.1",
+      "babel-preset-env": "1.5.2",
+      "babel-preset-react": "6.24.1",
+      "live-server": "^1.2.0",
+      "react": "15.6.1",
+      "react-dom": "15.6.1",
+      "react-modal": "2.2.2",
+      "validator": "8.0.0",
+      "webpack": "3.1.0",
+      "webpack-dev-server": "2.5.1"
+    }
 }
