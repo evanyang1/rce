@@ -8,4 +8,4 @@ RCE is currently being built on the MERN stack.
 
 All code must be well documented with comments, so one with no familiarity with the code can understand how the code can relate to which part of the project.
 
-Test
+Testing
