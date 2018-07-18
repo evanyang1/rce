@@ -15,5 +15,13 @@
   "bugs": {
     "url": "https://github.com/evanyang1/rce/issues"
   },
-  "homepage": "https://github.com/evanyang1/rce#readme"
+  "homepage": "https://github.com/evanyang1/rce#readme",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "react-dom": "^16.4.1",
+    "webpack": "^4.16.1"
+  }
 }
