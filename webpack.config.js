@@ -4,15 +4,16 @@ module.exports = {
   entry: './src/app.js',
   output: {
     path: path.join(__dirname, 'public'),
-    filename: 'bundle.js'
+    filename: 'bundle.js',
+    publicPath: "/build/"
   },
   module: {
     rules: [{
       loader: 'babel-loader',
-      test: /\.js$/,
+      test: /\.js$/, // regex: supports .js files. $ means "ends with"
       exclude: /node_modules/
     },{
-      test: /\.s?css$/,
+      test: /\.s?css$/, // support both .scss and .css files
       use: [
         'style-loader',
         'css-loader',
