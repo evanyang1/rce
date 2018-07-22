@@ -18,5 +18,4 @@ require('./styles/styles.scss');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-alert('');
 _reactDom2.default.render(_react2.default.createElement(_Homepage2.default, null), document.getElementById('app'));
