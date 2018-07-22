@@ -1,88 +1,22 @@
 'use strict';
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+var _react = require('react');
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+var _react2 = _interopRequireDefault(_react);
 
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+var _reactDom = require('react-dom');
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+var _reactDom2 = _interopRequireDefault(_reactDom);
 
-// Homepage is the parent component.
-var Homepage = function (_React$Component) {
-  _inherits(Homepage, _React$Component);
+var _Homepage = require('./components/Homepage');
 
-  function Homepage() {
-    _classCallCheck(this, Homepage);
+var _Homepage2 = _interopRequireDefault(_Homepage);
 
-    return _possibleConstructorReturn(this, (Homepage.__proto__ || Object.getPrototypeOf(Homepage)).apply(this, arguments));
-  }
+require('normalize.css/normalize.css');
 
-  _createClass(Homepage, [{
-    key: 'render',
-    value: function render() {
-      return React.createElement(
-        'div',
-        null,
-        React.createElement(Logo, null),
-        React.createElement(Login, null)
-      );
-    }
-  }]);
+require('./styles/styles.scss');
 
-  return Homepage;
-}(React.Component);
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-// Component: Logo for the website.
-
-
-var Logo = function (_React$Component2) {
-  _inherits(Logo, _React$Component2);
-
-  function Logo() {
-    _classCallCheck(this, Logo);
-
-    return _possibleConstructorReturn(this, (Logo.__proto__ || Object.getPrototypeOf(Logo)).apply(this, arguments));
-  }
-
-  _createClass(Logo, [{
-    key: 'render',
-    value: function render() {
-      return React.createElement(
-        'h1',
-        null,
-        ' RCE '
-      );
-    }
-  }]);
-
-  return Logo;
-}(React.Component);
-
-// Login Button.
-
-
-var Login = function (_React$Component3) {
-  _inherits(Login, _React$Component3);
-
-  function Login() {
-    _classCallCheck(this, Login);
-
-    return _possibleConstructorReturn(this, (Login.__proto__ || Object.getPrototypeOf(Login)).apply(this, arguments));
-  }
-
-  _createClass(Login, [{
-    key: 'render',
-    value: function render() {
-      return React.createElement(
-        'button',
-        null,
-        ' Log In '
-      );
-    }
-  }]);
-
-  return Login;
-}(React.Component);
-
-ReactDOM.render(React.createElement(Homepage, null), document.getElementById('app'));
+alert('');
+_reactDom2.default.render(_react2.default.createElement(_Homepage2.default, null), document.getElementById('app'));

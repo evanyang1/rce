@@ -12,6 +12,7 @@ module.exports = {
       loader: 'babel-loader',
       test: /\.js$/, // regex: supports .js files. $ means "ends with"
       exclude: /node_modules/
+
     },{
       test: /\.s?css$/, // support both .scss and .css files
       use: [
@@ -23,6 +24,7 @@ module.exports = {
   },
   devtool: 'cheap-module-eval-source-map',
   devServer: {
-    contentBase: path.join(__dirname, 'public')
+    contentBase: path.join(__dirname, 'public'),
+    historyApiFallback: true
   }
 };
