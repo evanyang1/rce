@@ -1,9 +1,9 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch, Link, NavLink  } from "react-router-dom";
+import { BrowserRouter, Route, Switch, Link, NavLink, withRouter  } from "react-router-dom";
 
 // Middle thing.
 const Jumbotron = () => (
-  <BrowserRouter>
+
       <div className="container">
         <div className="jumbotron">
           <h1>CORE</h1>
@@ -12,9 +12,9 @@ const Jumbotron = () => (
             Research papers get peer reviewed just like any other to maintain the rigor of academic research.
           </p>
         </div>
-        <Link to="./about">About</Link> <br />
+        <Link to="/about">About</Link> <br />
         <a href="#">Contact</a>
       </div>
-  </BrowserRouter>
+
 );
-export default Jumbotron;
+export default withRouter(Jumbotron);

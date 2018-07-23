@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Route, Link } from "react-router-dom";
 
 const JumbotronAbout = () => (
-  <BrowserRouter>
+
     <div className="container">
       <div className="jumbotron">
 
@@ -13,7 +13,7 @@ const JumbotronAbout = () => (
       <Link to="/about">About</Link> <br />
       <a href="#">Contact</a>
     </div>
-  </BrowserRouter>
+
 );
 
 export default JumbotronAbout;

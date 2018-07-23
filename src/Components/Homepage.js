@@ -1,5 +1,5 @@
 import React from 'react'; // Needed for react
-import { BrowserRouter, Route, Switch, Link, NavLink } from 'react-router-dom';
+import { BrowserRouter, Route, Switch, Link, NavLink, withRouter } from 'react-router-dom';
 
 import Logo from './Logo.js';
 import Login from './Login.js';
