@@ -1,9 +1,9 @@
 import React from 'react';
+import { BrowserRouter, Route, Switch, Link, NavLink  } from "react-router-dom";
 
 // Middle thing.
-export default class Jumbotron extends React.Component {
-  render(){
-    return (
+const Jumbotron = () => (
+  <BrowserRouter>
       <div className="container">
         <div className="jumbotron">
           <h1>CORE</h1>
@@ -12,9 +12,9 @@ export default class Jumbotron extends React.Component {
             Research papers get peer reviewed just like any other to maintain the rigor of academic research.
           </p>
         </div>
-        <a href="#">About</a> <br />
+        <Link to="./about">About</Link> <br />
         <a href="#">Contact</a>
       </div>
-    );
-  }
-}
+  </BrowserRouter>
+);
+export default Jumbotron;
