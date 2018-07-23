@@ -6,6 +6,7 @@ import Login from './Login.js';
 import ResearchAreaLink from './ResearchAreaLink.js';
 import Jumbotron from './Jumbotron.js'
 import JumbotronAbout from './AboutPage.js'
+import ResearchArea from './ResearchArea.js'
 
 // Homepage is the parent component.
 const Homepage = () => (
@@ -17,6 +18,7 @@ const Homepage = () => (
       <Switch>
         <Route exact path="/" component={Jumbotron} />
         <Route path="/about" component={JumbotronAbout} />
+        <Route path="/research-area" component={ResearchArea} />
       </Switch>
 
     </div>
