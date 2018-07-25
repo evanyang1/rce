@@ -12,7 +12,12 @@ const LoginPage = () => (
             Password:<br />
             <input type="password" name="Password" />
             <br /><br />
-            <input type="submit" value="Submit" />
+            <button type="button" class="btn btn-primary btn-lg">Log In</button>
+            <button> Create an Account</button>
+            <button> Log in with Facebook </button>
+            <button> Log in with Google </button>
+            <br />
+            <button type="button" class="btn btn-info btn-lg">Log Off</button>
           </form>
 
     </div>
