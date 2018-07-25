@@ -1,4 +1,4 @@
-import * from firebase as 'firebase';
+import * as firebase from 'firebase';
 
 // Config for our project: (Add Firebase to your web app)
 var config = {
