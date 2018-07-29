@@ -13,6 +13,7 @@ var config = {
 // initializeApp
 firebase.initializeApp(config);
 
-firebase.database().ref().set({
-  name: 'Evan'
-});
+// Google Auth from Firebase
+const googleAuthProvider = new firebase.auth.GoogleAuthProvider();
+
+export { firebase, googleAuthProvider as default };

@@ -5,5 +5,4 @@ import 'normalize.css/normalize.css';
 import './styles/styles.scss';
 import './firebase/firebase';
 
-
 ReactDOM.render(<Homepage />, document.getElementById('app'));
