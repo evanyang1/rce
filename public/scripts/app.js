@@ -16,7 +16,7 @@ require('normalize.css/normalize.css');
 
 require('./styles/styles.scss');
 
-require('./firebase/firebase');
+var _firebase = require('./firebase/firebase');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 

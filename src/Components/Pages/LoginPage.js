@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route, Link, withRouter } from "react-router-dom";
+import { startLogin } from '../../actions/auth';
 
 const LoginPage = () => (
   <div className="container">
@@ -15,7 +16,7 @@ const LoginPage = () => (
             <button type="button" class="btn btn-primary btn-lg">Log In</button>
             <button> Create an Account</button>
             <button> Log in with Facebook </button>
-            <button> Log in with Google </button>
+            <LogInWithGoogle />
             <br />
             <button type="button" class="btn btn-info btn-lg">Log Off</button>
           </form>
@@ -23,4 +24,15 @@ const LoginPage = () => (
     </div>
   </div>
 );
-export default withRouter(LoginPage);
+
+const LogInWithGoogle = ( {startLogin} ) => (
+  <button onClick={startLogin} > Log in with Google </button>
+);
+
+const mapDispatchToProps = (dispatch) => ({
+  startLogin: () => dispatch(startLogin())
+});
+
+export default connect(undefined, mapDispatchToProps)(LoginPage);
+
+// export default withRouter(LoginPage);
