@@ -1,11 +1,4 @@
-$blah: orange;
-
-h1 {
-  font-family: sans-serif;
-  font-size: 150%;
-  color: $blah;
-}
-
-body {
-  color: red;
-}
+@import './base/base';
+@import './base/settings';
+@import './components/ResearchAreaButton';
+@import './components/LoginButton';

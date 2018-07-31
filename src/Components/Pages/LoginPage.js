@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route, Link, withRouter } from "react-router-dom";
-import { startLogin } from '../../actions/auth';
+
 
 const LoginPage = () => (
   <div className="container">
@@ -33,6 +33,5 @@ const mapDispatchToProps = (dispatch) => ({
   startLogin: () => dispatch(startLogin())
 });
 
-export default connect(undefined, mapDispatchToProps)(LoginPage);
-
-// export default withRouter(LoginPage);
+//export default connect(undefined, mapDispatchToProps)(LoginPage);
+export default withRouter(LoginPage);
