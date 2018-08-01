@@ -13,12 +13,12 @@ const LoginPage = () => (
             Password:<br />
             <input type="password" name="Password" />
             <br /><br />
-            <button type="button" class="btn btn-primary btn-lg">Log In</button>
-            <button> Create an Account</button>
-            <button> Log in with Facebook </button>
+            <button type="button" class="btn btn-primary btn-lg" id='log-in-actual'>Log In</button>
+            <button id='create-an-account'> Create an Account</button>
+            <button id='log-in-facebook'> Log in with Facebook </button>
             <LogInWithGoogle />
             <br />
-            <button type="button" class="btn btn-info btn-lg">Log Off</button>
+            <button type="button" class="btn btn-info btn-lg" id='log-off-actual'>Log Off</button>
           </form>
 
     </div>
@@ -26,7 +26,7 @@ const LoginPage = () => (
 );
 
 const LogInWithGoogle = ( {startLogin} ) => (
-  <button onClick={startLogin} > Log in with Google </button>
+  <button onClick={startLogin} id='login-google'> Log in with Google </button>
 );
 
 const mapDispatchToProps = (dispatch) => ({
