@@ -4,7 +4,7 @@ import { BrowserRouter, Route, Switch, Link, NavLink, withRouter  } from "react-
 // Middle thing.
 const Jumbotron = () => (
 
-      <div className="container">
+      <div className="container" id='homepage-display'>
         <div className="jumbotron">
           <h1>CORE</h1>
           <h2>Collaborative Research Environment</h2>

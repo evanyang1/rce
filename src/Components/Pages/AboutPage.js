@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Link, withRouter } from "react-router-dom";
 
 const JumbotronAbout = () => (
 
-    <div className="container">
+    <div className="container" id='jumbotron-about'>
       <div className="jumbotron">
 
         <h1> About </h1>

@@ -11,7 +11,7 @@ const LoginPage = () => (
             <input type="text" name="Email" />
             <br />
             Password:<br />
-            <input type="password" name="Password" />
+            <input type="password" name="Password"  />
             <br /><br />
             <button type="button" class="btn btn-primary btn-lg" id='log-in-actual'>Log In</button>
             <button id='create-an-account'> Create an Account</button>
