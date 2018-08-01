@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Link, withRouter } from "react-router-dom";
 
 
 const LoginPage = () => (
-  <div className="container">
+  <div className="container" id='login-page'>
     <div className="jumbotron">
         <h2> Log In </h2>
           <form>

@@ -6,10 +6,11 @@ $l-size: 3.2rem;
   background: $sea-blue;
   border: none;
   border-bottom: .6rem solid darken($sea-blue, 10%);
+  border-left: .6rem solid darken($sea-blue, 10%);
   color: white;
   font-weight: bold;
   font-size: $l-size;
   margin-bottom: $m-size;
   padding: 2.4rem;
-
+  
 }
